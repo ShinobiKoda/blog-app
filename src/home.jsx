@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <div className="content">
       <h2>All Blogs</h2>
-      {isLoading && <p>Loading....</p>}
+      {isLoading && <p className="loading_index">Loading....</p>}
       <div className="blog_container">
         {blogs && blogs.map((blog) => (
           <Link to = {`/content/${blog.id}`}  key={blog.id}>
